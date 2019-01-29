@@ -1,0 +1,42 @@
+<div class="alert alert-dark" role="alert" id="turno">
+    <!--inicio de formulario-->
+    <form class="form-inline">
+        <div class="form-group mb-2">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><img src="images/icons/calendario.ico" style="width: 20px;"></div>
+                </div>
+                <input type="date" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group mx-sm-3 mb-2">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><img src="images/icons/cancha.ico" style="width: 23px;"></div>
+                </div>
+                <select class="form-control">
+                    <option>Cancha 1</option>
+                    <option>Cancha 2</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group mx-sm-3 mb-2">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><img src="images/icons/reloj.ico" style="width: 23px;"></div>
+                </div>
+                <select class="form-control">
+                    {{#each lista}}
+                    <option value="{{this.nombre}}">{{this.nombre}}</option>
+                    {{/each}}
+                </select>
+            </div>
+        </div>
+
+
+        <button type="submit" class="btn btn-success mb-2">Reservar</button>
+    </form>
+    <!--fin de formulario-->
+</div>

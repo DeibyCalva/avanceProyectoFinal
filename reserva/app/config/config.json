@@ -1,0 +1,15 @@
+{
+    "development":{
+        "username": "root",
+        "database": "reserva",
+        "host": "localhost",
+        "dialect": "mysql"
+    },
+    "staging":{
+        "username": "root",
+        "database": "reserva",
+        "host": "localhost",
+        "dialect": "mysql"
+    }
+  
+}
